@@ -12,7 +12,7 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 && \
 rm -rf /var/lib/apt/lists/*
 
 RUN \
-git clone 'https://github.com/yandex/tomita-parser.git' tomita && \
+git clone 'https://github.com/JsJustS/tomita-parser.git' tomita && \
 mkdir -p /tomita/build && \
 cd /tomita/build && \
 cmake ../src/ -DMAKE_ONLY=FactExtract/Parser/tomita-parser -DCMAKE_BUILD_TYPE=Release && \
